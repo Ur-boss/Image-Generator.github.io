@@ -1,0 +1,67 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call GPT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="side-bar">
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">
+                <i class="fa-solid fa-sliders"></i>                
+            </button>  
+        </div>              
+
+        <h1>Call GPT</h1>
+        <p id="output"></p>
+        <div class="bottom-section">
+            <div class="input-container">
+            <input id="input1" placeholder="Search your query" type="text">
+            <div id="submit">
+                <i class="fa-regular fa-paper-plane fa-xl" style="color: #000000;"></i> 
+            </div>
+            </div>
+        </div>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <button id="newchat">+ New chat</button>
+            <div class="history"></div>
+            <nav>
+                <p>Made by Chhachhia</p>
+            </nav>
+          </div>      
+           
+    </section>
+
+    <section class="main1">
+        <div class="ur-area">
+        <iframe id="pdfPlay" src="" frameborder="0"></iframe>
+        </div>
+        <div class="select-pdf">
+            <input type="file" id="fileUpload" oninput="openpdf()" accept="pdf">
+            <label for="fileUpload">Select pdf file </label>
+            <p>or drop PDF here</p>
+            
+            <!-- <form action="upload.php" method="post" enctype="multipart/form-data">
+                <label for="fileUpload">Select PDF file:</label>
+                <input type="file" name="pdf_file" id="fileUpload">
+                <input type="submit" value="Upload PDF">
+            </form> -->
+        </div>
+
+      <nav>
+        <p class="info"> Free Research Preview
+            Our goal is to make AI system more natural and safe to interact with.
+            Your feedback will help us improve.
+        </p>
+    </nav> 
+        
+    </section>
+    <script src="app.js"></script>
+
+</body>
+</html>
